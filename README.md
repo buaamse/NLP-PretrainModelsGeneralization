@@ -9,6 +9,10 @@ pytorch 版本 1.6.0
 
 机器信息：NVIDIA-SMI 460.32.03    Driver Version: 460.32.03    CUDA Version: 11.2
 pytorch 版本 1.7.1
+1.注意torch版本为1.7，torchvision的版本0.5.0
+2.train如果用的gpu: device='cuda:0' cpu:device='cpu'同时把epochs=1, batchSize=2改小
+3.下载.json等文件时候注意格式不能错，右键点复制链接地址可能下载的html文件，要特别注意会报错
+generate_data 这里有'encoding=utf-8'的问题，或者+'rb' 'wb'会报错
 ```
 
 python依赖：
